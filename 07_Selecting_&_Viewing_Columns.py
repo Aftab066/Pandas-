@@ -13,7 +13,7 @@ df = pd.DataFrame(data)
 
 #Filtering Columns 
 
-# print(df[df['Marks']>90]) #Filttering Columns By A Condition
+print(df[df['Marks']>90]) #Filttering Columns By A Condition
 # print(df[(df['Age'] > 16)& (df['Marks'] > 80)])
 # print(df.loc[0,'Name']) #Accessing Specific Row
 # print(df.iloc[0,1]) #Accessing On Index 
