@@ -14,4 +14,4 @@ df = pd.DataFrame(data)
 #Filtering Columns 
 
 # print(df[df['Marks']>90]) #Filttering Columns By A Condition
-print(df[(df['Marks']> 80) & (df['Age'] > 14)])
+print(df[(df['Age'] > 16)& (df['Marks'] > 80)])
