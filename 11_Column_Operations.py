@@ -27,5 +27,8 @@ name = df.rename(columns={'Marks': 'Grade',
 dell = df.drop('Grade', axis=1)
 # print(dell) # Deletes The Column And Returns A Copy Of DataframeE
 
-print(ex)
+#Updating Values 
+df.loc[0,'Age'] =21  #Updating Specific Index Data
+df['Grade'] = df['Grade'] /2 #Updating Whole Column Data
+# print(ex)
 print(df)
