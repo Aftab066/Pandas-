@@ -12,6 +12,8 @@ df = pd.DataFrame(data)
 new = df['Salary'] = [10000,20000,30000,40000] #Creating A Column 
 new = df['Bonus'] = df['Salary'] * 2  #Creating A Column 
 new = df['Total'] = df['Salary'] + df['Bonus'] #Creating A Column 
+#df.insert('location','column_name',data)
+ex = df.insert(0,'ID',[10,20,30,40])
 find = df[df['Total'] > 100000]
 
 #Rename A Column
@@ -23,7 +25,7 @@ name = df.rename(columns={'Marks': 'Grade',
 
 #  Delete A Column
 dell = df.drop('Grade', axis=1)
-print(dell) # Deletes The Column And Returns A Copy Of Dataframe
+# print(dell) # Deletes The Column And Returns A Copy Of DataframeE
 
-# print(new)
-# print(df)
+print(ex)
+print(df)
